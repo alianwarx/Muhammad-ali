@@ -1,12 +1,12 @@
 import { Code, Search, Cog, GitBranch, ClipboardList, Crown } from "lucide-react";
 
 const stages = [
-  { icon: Code, label: "Developer", desc: "Full-stack development & simulation systems" },
-  { icon: Search, label: "QA Engineer", desc: "Manual testing, defect management" },
-  { icon: Cog, label: "Automation", desc: "Playwright, data-driven frameworks" },
-  { icon: GitBranch, label: "CI/CD Integration", desc: "Pipeline gates, deployment governance" },
-  { icon: ClipboardList, label: "QA Strategy", desc: "Process design, DoD/DoR, test strategy" },
-  { icon: Crown, label: "Test Leadership", desc: "Mentoring, stakeholder alignment" },
+  { icon: Code, label: "Developer", desc: "Development & simulation systems. Understanding systems from inside-out shaped a uniquely holistic QA perspective." },
+  { icon: Search, label: "QA Engineer", desc: "Manual testing, defect management. First exposure to enterprise-scale quality governance and transitioned into quality engineering." },
+  { icon: Cog, label: "Automation", desc: "Playwright, data-driven frameworks. Architected data-driven Page Object Model frameworks for complex C#/Redis/Web stacks. Elevated automation maturity across engineering teams." },
+  { icon: GitBranch, label: "CI/CD Integration", desc: "Pipeline gates, deployment governance. Integrated automated tests as deployment gates within CI/CD pipelines. Quality became a hard constraint — not an afterthought — in every release cycle." },
+  { icon: ClipboardList, label: "QA Strategy", desc: "Process design, DoD/DoR, test strategy. Established QA frameworks from scratch. Introduced process maturity: Definition of Done, Definition of Ready, 3-Amigos sessions, Test Strategy, k6 performance testing." },
+  { icon: Crown, label: "Test Leadership", desc: "Mentoring, stakeholder alignment. Owning the quality vision. Coaching engineers, aligning Product and Dev, conducting Playwright training, shaping sprint ceremonies, and driving WCAG accessibility compliance." },
 ];
 
 export default function CareerTimeline() {
@@ -20,6 +20,9 @@ export default function CareerTimeline() {
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
             Career Evolution
           </h2>
+          <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
+            A deliberate progression from developer to quality architect — each step building toward strategic test leadership.
+          </p>
         </div>
 
         <div className="relative fade-up" style={{ transitionDelay: "0.2s" }}>
@@ -35,7 +38,7 @@ export default function CareerTimeline() {
                 <p className="font-semibold text-primary text-sm">{s.label}</p>
                 <p className="text-xs text-muted-foreground mt-1 max-w-[140px]">{s.desc}</p>
                 {i < stages.length - 1 && (
-                  <div className="hidden md:block absolute top-12 -right-2 w-4 h-4 rotate-45 border-t-2 border-r-2 border-accent z-20" style={{ right: "-1rem" }} />
+                  <div className="hidden md:block absolute top-9 -right-2 w-6 h-6 rotate-45 border-t-2 border-r-2 border-accent z-20" style={{ right: "-1rem" }} />
                 )}
               </div>
             ))}

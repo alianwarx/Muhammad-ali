@@ -16,7 +16,7 @@ const milestones = [
     sub: "Stavanger, Norway",
     x: 250,
     y: 120,
-    summary: "Master's in Computer Science — Specialized in software engineering and quality assurance.",
+    summary: "Master's in Computer Science — Specialized in Data Science and deepened expertise in software engineering, software quality, distributed systems, and research-driven engineering.",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const milestones = [
     sub: "Developer",
     x: 400,
     y: 180,
-    summary: "Unity-based 3D simulation integrated with physical medical manikin reacting to real-time data.",
+    summary: "Unity-based 3D simulation integrated with physical medical manikin reacting to real-time data. Gained deep understanding of real-time data systems and quality from a development perspective.",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const milestones = [
     sub: "QA Engineer",
     x: 530,
     y: 100,
-    summary: "Transformed manual-heavy regression into Playwright-driven automation, increasing release predictability.",
+    summary: "Transitioned from manual-heavy testing to Playwright automation. Introduced structured regression frameworks reducing dependency on ad-hoc testing and increasing release predictability.",
   },
   {
     id: 5,
@@ -40,7 +40,7 @@ const milestones = [
     sub: "Automation & CI/CD",
     x: 660,
     y: 170,
-    summary: "Data-driven POM framework across C#, Redis & Web Portal. Tests as CI/CD deployment gates.",
+    summary: "Tackled complex C#/Redis/Server/Web architecture. Implemented data-driven POM framework and integrated tests as CI/CD deployment gates, significantly reducing deployment instability.",
   },
   {
     id: 6,
@@ -48,7 +48,7 @@ const milestones = [
     sub: "QA Framework Design",
     x: 800,
     y: 90,
-    summary: "Built QA from zero: DoD, DoR, 3-Amigos, test strategy, pipeline validation, k6, WCAG compliance.",
+    summary: "Built QA from zero structured QA. Introduced DoD, DoR, 3-Amigos, test strategy, Scrum ceremonies, pipeline validation, k6 performance testing, WCAG compliance accessibility. Transformed the devlopment into a streamlined, quality-focused process with a strong emphasis on automation and continuous improvement.",
   },
 ];
 
@@ -69,7 +69,7 @@ export default function JourneyMap() {
             From Pakistan to Norway
           </h2>
           <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
-            A journey of continuous growth — click each milestone to learn more.
+            From Pakistan to Norway — an academic and professional path built on continuous growth and transformation.
           </p>
         </div>
 
@@ -98,7 +98,7 @@ export default function JourneyMap() {
               <g key={m.id}>
                 <Popover open={active === m.id} onOpenChange={(open) => setActive(open ? m.id : null)}>
                   <PopoverTrigger asChild>
-                    <g className="cursor-pointer" onClick={() => setActive(active === m.id ? null : m.id)}>
+                    <g className="cursor-pointer" onMouseEnter={() => setActive(m.id)} onMouseLeave={() => setActive(null)}>
                       <circle
                         cx={m.x}
                         cy={m.y}
@@ -113,7 +113,6 @@ export default function JourneyMap() {
                         cy={m.y}
                         r="6"
                         fill="hsl(var(--accent))"
-                        className={active === m.id ? "animate-pulse-dot" : ""}
                       />
                       <text
                         x={m.x}
@@ -141,6 +140,13 @@ export default function JourneyMap() {
               </g>
             ))}
           </svg>
+                  {/* Flags legend */}
+        <div className="flex justify-center mt-6">
+          <div className="flex items-center gap-2 text-center">
+            <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#0F2A4A" }} />
+            <span style={{ fontSize: "0.72rem", color: "#718096", fontWeight: 500 }}>Hover on the nodes to explore</span>
+          </div>
+        </div>
         </div>
       </div>
     </section>

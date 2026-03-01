@@ -21,6 +21,19 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // smooth-scroll handler that avoids changing the hash (prevents HashRouter from treating
+  // the anchor as a route). keeps the page from reloading / triggering 404s.
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const id = href.replace(/^#/, "");
+    const target = document.getElementById(id);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+    // close mobile menu if open
+    setMobileOpen(false);
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -29,7 +42,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="text-lg font-bold tracking-tight text-primary">
-          M. Ali Anwar
+          MUHAMMAD ALI ANWAR
         </a>
 
         {/* Desktop */}
@@ -38,13 +51,14 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
+              onClick={(e) => handleNavClick(e, l.href)}
               className="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               {l.label}
             </a>
           ))}
           <Button size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
-            <a href="#journey">Explore My Journey</a>
+            <a href="#contact" onClick={(e) => handleNavClick(e, "#contact")}>LET'S CONNECT</a>
           </Button>
         </div>
 
@@ -61,14 +75,19 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
+              onClick={(e) => handleNavClick(e, l.href)}
               className="block text-sm text-muted-foreground hover:text-primary"
-              onClick={() => setMobileOpen(false)}
             >
               {l.label}
             </a>
           ))}
           <Button size="sm" className="w-full bg-accent text-accent-foreground" asChild>
-            <a href="#journey" onClick={() => setMobileOpen(false)}>Explore My Journey</a>
+            <a href="#journey" onClick={(e) => {
+                handleNavClick(e, "#journey");
+                setMobileOpen(false);
+              }}>
+              Explore My Journey
+            </a>
           </Button>
         </div>
       )}

@@ -131,4 +131,21 @@
   .animate-pulse-dot {
     animation: pulse-dot 2s ease-in-out infinite;
   }
+
+  .green-tag {
+    background: rgba(42, 122, 90, 0.08);
+    color: #2A7A5A;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 3px;
+  }
+  
+  .philosophy-pill {
+    border: 1px solid var(--border);
+    transition: all 0.25s ease;
+  }
+
 }

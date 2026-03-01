@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from "react";
-import { TrendingUp, BarChart3, Layers, Network, ShieldCheck } from "lucide-react";
+import { TrendingUp, BarChart3, Layers, Network, ShieldCheck, Crown } from "lucide-react";
 
 const metrics = [
-  { icon: TrendingUp, value: 85, suffix: "%", label: "Deployment Stability Improved" },
-  { icon: BarChart3, value: 70, suffix: "%", label: "Manual Regression Reduced" },
-  { icon: Layers, value: 3, suffix: "", label: "QA Frameworks Built from Zero" },
+  { icon: TrendingUp, value: 80, suffix: "%", label: "Deployment Stability Improved" },
+  { icon: BarChart3, value: 60, suffix: "%", label: "Manual Regression Reduced" },
+  { icon: Layers, value: 3, suffix: "+", label: "QA Frameworks Built from Zero" },
   { icon: Network, value: 10, suffix: "+", label: "Systems Integrated & Tested" },
-  { icon: ShieldCheck, value: 100, suffix: "%", label: "CI/CD Governance Enabled" },
+  { icon: ShieldCheck, value: 70, suffix: "%", label: "CI/CD Governance Enabled" },
+  { icon: Crown, value: 5, suffix: "+", label: "Teams Mentored" },
 ];
 
 function AnimatedCounter({ target, suffix }: { target: number; suffix: string }) {
@@ -56,9 +57,12 @@ export default function ImpactSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
             Impact & Results
           </h2>
+          <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
+            Measurable outcomes delivered across engagements — quality as a strategic capability.
+          </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {metrics.map((m, i) => (
             <div
               key={m.label}
