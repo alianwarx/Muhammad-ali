@@ -1,46 +1,43 @@
 import React, { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { AlertTriangle, ArrowLeft, Shield, GitBranch, Users } from "lucide-react";
 
-const principles = [
-  {
-    icon: <AlertTriangle size={18} />,
-    title: "Risk-Based Testing",
-    description:
-      "Not all code carries equal risk. Testing strategy must be proportional to business impact, deployment frequency, and failure consequence. Effort flows where it matters most.",
-    highlight: "Prioritize by consequence",
-  },
-  {
-    icon: <ArrowLeft size={18} />,
-    title: "Shift-Left Approach",
-    description:
-      "Defects are cheapest at the source. Quality gates, DoD/DoR definitions, and 3-Amigos sessions bring quality thinking into requirements and design — before a single line is written.",
-    highlight: "Quality starts at discovery",
-  },
-  {
-    icon: <Shield size={18} />,
-    title: "Automation as Safety Net",
-    description:
-      "Automation is not a replacement for thinking — it's a permanent guardian. Well-designed automated suites protect known behavior, freeing exploratory effort for the unknown.",
-    highlight: "Protect what is known",
-  },
-  {
-    icon: <GitBranch size={18} />,
-    title: "CI/CD as Quality Governance",
-    description:
-      "Deployment pipelines are quality enforcement mechanisms. Tests as gates transform CI/CD from delivery infrastructure into a continuous quality audit system.",
-    highlight: "Gates over gates",
-  },
-  {
-    icon: <Users size={18} />,
-    title: "Collaboration over Silos",
-    description:
-      "Quality is a shared organizational responsibility. Cross-functional alignment between Product, Dev, and QA removes late-stage surprises and builds shared ownership of outcomes.",
-    highlight: "Shared accountability",
-  },
-];
-
 export default function QualityPhilosophy() {
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
+
+  const principles = [
+    {
+      icon: <AlertTriangle size={18} />,
+      title: t("philosophy.principles.riskBased.title"),
+      description: t("philosophy.principles.riskBased.description"),
+      highlight: t("philosophy.principles.riskBased.highlight"),
+    },
+    {
+      icon: <ArrowLeft size={18} />,
+      title: t("philosophy.principles.shiftLeft.title"),
+      description: t("philosophy.principles.shiftLeft.description"),
+      highlight: t("philosophy.principles.shiftLeft.highlight"),
+    },
+    {
+      icon: <Shield size={18} />,
+      title: t("philosophy.principles.automationSafety.title"),
+      description: t("philosophy.principles.automationSafety.description"),
+      highlight: t("philosophy.principles.automationSafety.highlight"),
+    },
+    {
+      icon: <GitBranch size={18} />,
+      title: t("philosophy.principles.cicdGovernance.title"),
+      description: t("philosophy.principles.cicdGovernance.description"),
+      highlight: t("philosophy.principles.cicdGovernance.highlight"),
+    },
+    {
+      icon: <Users size={18} />,
+      title: t("philosophy.principles.collaboration.title"),
+      description: t("philosophy.principles.collaboration.description"),
+      highlight: t("philosophy.principles.collaboration.highlight"),
+    },
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -67,7 +64,7 @@ export default function QualityPhilosophy() {
               <div className="divider-line" />
 
                 <p className="text-sm font-medium tracking-widest uppercase text-accent mb-2 ">
-                  Principles
+                  {t("philosophy.sectionTag")}
                 </p>
                 <h2
                     style={{
@@ -76,10 +73,10 @@ export default function QualityPhilosophy() {
                       marginBottom: "1rem",
                     }}
                   className="text-3xl md:text-4xl font-bold text-primary">
-                  Quality Philosophy
+                  {t("philosophy.title")}
                 </h2>
                 <p style={{ color: "#4A5568", fontSize: "1rem", lineHeight: 1.75, marginBottom: "2rem" }}>
-                  These are not just methodologies — they are guiding principles that shape how I design quality systems, influence teams, and make strategic decisions.
+                  {t("philosophy.intro")}
                 </p>
 
               <div
@@ -100,8 +97,7 @@ export default function QualityPhilosophy() {
 
                   }}
                 >
-                  "Quality is not a phase — it is an architectural commitment made from day one."
-                  {/* "Quality is not a phase. It is an architecture decision made at the beginning of every sprint." */}
+                  {t("philosophy.quote")}
                 </p>
               </div>
             </div>

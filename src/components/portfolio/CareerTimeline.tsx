@@ -1,27 +1,54 @@
+import { useTranslation } from "react-i18next";
 import { Code, Search, Cog, GitBranch, ClipboardList, Crown } from "lucide-react";
 
-const stages = [
-  { icon: Code, label: "Developer", desc: "Development & simulation systems. Understanding systems from inside-out shaped a uniquely holistic QA perspective." },
-  { icon: Search, label: "QA Engineer", desc: "Manual testing, defect management. First exposure to enterprise-scale quality governance and transitioned into quality engineering." },
-  { icon: Cog, label: "Automation", desc: "Playwright, data-driven frameworks. Architected data-driven Page Object Model frameworks for complex C#/Redis/Web stacks. Elevated automation maturity across engineering teams." },
-  { icon: GitBranch, label: "CI/CD Integration", desc: "Pipeline gates, deployment governance. Integrated automated tests as deployment gates within CI/CD pipelines. Quality became a hard constraint — not an afterthought — in every release cycle." },
-  { icon: ClipboardList, label: "QA Strategy", desc: "Process design, DoD/DoR, test strategy. Established QA frameworks from scratch. Introduced process maturity: Definition of Done, Definition of Ready, 3-Amigos sessions, Test Strategy, k6 performance testing." },
-  { icon: Crown, label: "Test Leadership", desc: "Mentoring, stakeholder alignment. Owning the quality vision. Coaching engineers, aligning Product and Dev, conducting Playwright training, shaping sprint ceremonies, and driving WCAG accessibility compliance." },
-];
-
 export default function CareerTimeline() {
+  const { t } = useTranslation();
+
+  const stages = [
+    {
+      icon: Code,
+      label: t("career.stages.developer.label"),
+      desc: t("career.stages.developer.desc"),
+    },
+    {
+      icon: Search,
+      label: t("career.stages.qaEngineer.label"),
+      desc: t("career.stages.qaEngineer.desc"),
+    },
+    {
+      icon: Cog,
+      label: t("career.stages.automation.label"),
+      desc: t("career.stages.automation.desc"),
+    },
+    {
+      icon: GitBranch,
+      label: t("career.stages.cicd.label"),
+      desc: t("career.stages.cicd.desc"),
+    },
+    {
+      icon: ClipboardList,
+      label: t("career.stages.qaStrategy.label"),
+      desc: t("career.stages.qaStrategy.desc"),
+    },
+    {
+      icon: Crown,
+      label: t("career.stages.testLeadership.label"),
+      desc: t("career.stages.testLeadership.desc"),
+    },
+  ];
+
   return (
     <section id="evolution" className="py-24">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16 fade-up">
           <p className="text-sm font-medium tracking-widest uppercase text-accent mb-2">
-            Transformation
+            {t("career.sectionTag")}
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
-            Career Evolution
+            {t("career.title")}
           </h2>
           <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
-            A deliberate progression from developer to quality architect — each step building toward strategic test leadership.
+            {t("career.subtitle")}
           </p>
         </div>
 

@@ -1,0 +1,291 @@
+{
+  "navbar": {
+    "brand": "MUHAMMAD ALI ANWAR",
+    "journey": "Journey",
+    "evolution": "Evolution",
+    "caseStudies": "Case Studies",
+    "impact": "Impact",
+    "philosophy": "Philosophy",
+    "contact": "Contact",
+    "letsConnect": "LET'S CONNECT",
+    "exploreMyJourney": "Explore My Journey",
+    "languageToggleLabel": "Switch language"
+  },
+  "hero": {
+    "roleTag": "Senior QA Engineer · Test Lead",
+    "firstName": "Muhammad Ali",
+    "lastName": "Anwar",
+    "subtitle": "Senior QA Engineer · Automation · DevOps-Driven Quality",
+    "quote": "\"I design quality systems —— not just test cases.\"",
+    "badgeRiskTesting": "Risk-Based Testing",
+    "badgeTools": "Playwright · k6 · BrowserStack",
+    "badgeCICD": "CI/CD Integration",
+    "cta": "Explore My Journey",
+    "basedIn": "Based in",
+    "location": "Stavanger, Norway",
+    "photoAlt": "Muhammad Ali Anwar"
+  },
+  "journey": {
+    "sectionTag": "The Path",
+    "title": "From Pakistan to Norway",
+    "subtitle": "From Pakistan to Norway — an academic and professional path built on continuous growth and transformation.",
+    "hoverHint": "Hover on the nodes to explore",
+    "milestones": {
+      "1": {
+        "label": "Islamia University",
+        "sub": "Bahawalpur, Pakistan",
+        "summary": "Bachelor's degree — Built foundation in Computer Science and software development."
+      },
+      "2": {
+        "label": "University of Stavanger",
+        "sub": "Stavanger, Norway",
+        "summary": "Master's in Computer Science — Specialized in Data Science and deepened expertise in software engineering, software quality, distributed systems, and research-driven engineering."
+      },
+      "3": {
+        "label": "Laerdal Medical",
+        "sub": "Developer",
+        "summary": "Unity-based 3D simulation integrated with physical medical manikin reacting to real-time data. Gained deep understanding of real-time data systems and quality from a development perspective."
+      },
+      "4": {
+        "label": "Equinor",
+        "sub": "QA Engineer",
+        "summary": "Transitioned from manual-heavy testing to Playwright automation. Introduced structured regression frameworks reducing dependency on ad-hoc testing and increasing release predictability."
+      },
+      "5": {
+        "label": "Sekal",
+        "sub": "Automation & CI/CD",
+        "summary": "Tackled complex C#/Redis/Server/Web architecture. Implemented data-driven POM framework and integrated tests as CI/CD deployment gates, significantly reducing deployment instability."
+      },
+      "6": {
+        "label": "Lyse",
+        "sub": "QA Framework Design",
+        "summary": "Built QA from zero structured QA. Introduced DoD, DoR, 3-Amigos, test strategy, Scrum ceremonies, pipeline validation, k6 performance testing, WCAG compliance accessibility. Transformed the development into a streamlined, quality-focused process with a strong emphasis on automation and continuous improvement."
+      }
+    }
+  },
+  "career": {
+    "sectionTag": "Transformation",
+    "title": "Career Evolution",
+    "subtitle": "A deliberate progression from developer to quality architect — each step building toward strategic test leadership.",
+    "stages": {
+      "developer": {
+        "label": "Developer",
+        "desc": "Development & simulation systems. Understanding systems from inside-out shaped a uniquely holistic QA perspective."
+      },
+      "qaEngineer": {
+        "label": "QA Engineer",
+        "desc": "Manual testing, defect management. First exposure to enterprise-scale quality governance and transitioned into quality engineering."
+      },
+      "automation": {
+        "label": "Automation",
+        "desc": "Playwright, data-driven frameworks. Architected data-driven Page Object Model frameworks for complex C#/Redis/Web stacks. Elevated automation maturity across engineering teams."
+      },
+      "cicd": {
+        "label": "CI/CD Integration",
+        "desc": "Pipeline gates, deployment governance. Integrated automated tests as deployment gates within CI/CD pipelines. Quality became a hard constraint — not an afterthought — in every release cycle."
+      },
+      "qaStrategy": {
+        "label": "QA Strategy",
+        "desc": "Process design, DoD/DoR, test strategy. Established QA frameworks from scratch. Introduced process maturity: Definition of Done, Definition of Ready, 3-Amigos sessions, Test Strategy, k6 performance testing."
+      },
+      "testLeadership": {
+        "label": "Test Leadership",
+        "desc": "Mentoring, stakeholder alignment. Owning the quality vision. Coaching engineers, aligning Product and Dev, conducting Playwright training, shaping sprint ceremonies, and driving WCAG accessibility compliance."
+      }
+    }
+  },
+  "cases": {
+    "sectionTag": "Proven Results",
+    "title": "Case Studies",
+    "subtitle": "Four engagements that demonstrate transformation capability — from automation design to cultural change.",
+    "contextLabel": "Context",
+    "actionLabel": "Action",
+    "impactLabel": "Impact",
+    "leadershipLabel": "Leadership",
+    "equinor": {
+      "company": "Equinor",
+      "industry": "Energy · Enterprise",
+      "headline": "From Manual Regression to Automated Confidence",
+      "context": "A manual-heavy regression process with no structured automation strategy. Release cycles were unpredictable, and test coverage depended entirely on individual effort and institutional memory.",
+      "action": "Introduced Playwright-based automation for regression coverage. Designed reusable test suites aligned with release checkpoints. Established the concept of a 'quality baseline' that teams could rely on across releases.",
+      "impact": "Increased release predictability. Reduced time spent on repetitive regression. Created a foundation for scalable automation that outlasted the engagement.",
+      "leadership": "Advocated for automation investment to stakeholders. Trained team members on test scripting principles. Positioned QA as a strategic function rather than a final-stage bottleneck.",
+      "tags": ["Playwright", "Regression Automation", "Enterprise QA"]
+    },
+    "sekal": {
+      "company": "Sekal",
+      "industry": "Oil & Gas · Deep Tech",
+      "headline": "CI/CD Quality Gates for a Complex Legacy Architecture",
+      "context": "A complex technical stack — C#, Redis, Web Portal — with loosely coupled services and no automated quality guardrails. Deployments were frequent, and instability was common.",
+      "action": "Implemented a data-driven Page Object Model (POM) framework. Mapped test coverage to deployment risk zones. Integrated automated test suites as hard deployment gates within CI/CD pipelines. Structured cross-team test ownership.",
+      "impact": "Reduced deployment instability. Established automated quality governance as a CI/CD norm. Improved cross-team collaboration by clarifying test responsibilities across 10+ system interfaces.",
+      "leadership": "Collaborated with architects and DevOps to design pipeline integration. Surfaced quality risks early in planning sessions. Built cross-functional trust through transparent defect triage.",
+      "tags": ["C# · Redis", "Data-Driven POM", "CI/CD Gates", "10+ Systems"]
+    },
+    "lyse": {
+      "company": "Lyse",
+      "industry": "Utilities · Consumer Tech",
+      "headline": "Establishing QA Culture from Zero",
+      "context": "No structured QA process existed. Sprints lacked clear acceptance criteria, test strategy was absent, and quality was treated as an implicit developer responsibility.",
+      "action": "Introduced Definition of Done (DoD), Definition of Ready (DoR), and 3-Amigos sessions. Authored the first formal Test Strategy. Integrated pipeline validation. Launched k6 performance testing and WCAG accessibility compliance checks.",
+      "impact": "Transformed sprint predictability. Enabled early defect detection before code reached staging. Established accessibility and performance as measurable quality dimensions — not afterthoughts.",
+      "leadership": "Drove QA process design from the ground up with Product Owner alignment. Facilitated Scrum ceremonies and Poker Planning sessions. Became the quality anchor for the entire product organization.",
+      "tags": ["k6 Performance", "WCAG Accessibility", "Test Strategy", "3-Amigos"]
+    },
+    "laerdal": {
+      "company": "Laerdal Medical",
+      "industry": "MedTech · Simulation",
+      "headline": "Quality Engineering in Safety-Critical Medical Simulation",
+      "context": "A Unity-based 3D simulation platform integrated with physical medical manikins responding to real-time physiological data. The stakes: training healthcare professionals for life-critical scenarios.",
+      "action": "Developed and tested simulation logic ensuring accurate physical-digital synchronization. Built understanding of system integration between hardware sensors, real-time data streams, and 3D rendering pipelines.",
+      "impact": "Contributed to a product used in hospital training programs globally. Built deep cross-domain knowledge — software, hardware, domain logic — that shaped a uniquely holistic approach to quality.",
+      "leadership": "Operated at the intersection of engineering and domain expertise. Collaborated with medical experts and hardware engineers. This experience directly informed later QA strategy work by understanding quality from a developer's perspective.",
+      "tags": ["Unity", "Real-Time Data", "Medical Simulation", "Hardware Integration"]
+    }
+  },
+  "impact": {
+    "sectionTag": "Measurable Outcomes",
+    "title": "Impact & Results",
+    "subtitle": "Measurable outcomes delivered across engagements — quality as a strategic capability.",
+    "metrics": {
+      "deploymentStability": "Deployment Stability Improved",
+      "manualRegression": "Manual Regression Reduced",
+      "qaFrameworks": "QA Frameworks Built from Zero",
+      "systemsIntegrated": "Systems Integrated & Tested",
+      "cicdGovernance": "CI/CD Governance Enabled",
+      "teamsMentored": "Teams Mentored"
+    }
+  },
+  "philosophy": {
+    "sectionTag": "Principles",
+    "title": "Quality Philosophy",
+    "intro": "These are not just methodologies — they are guiding principles that shape how I design quality systems, influence teams, and make strategic decisions.",
+    "quote": "\"Quality is not a phase — it is an architectural commitment made from day one.\"",
+    "principles": {
+      "riskBased": {
+        "title": "Risk-Based Testing",
+        "description": "Not all code carries equal risk. Testing strategy must be proportional to business impact, deployment frequency, and failure consequence. Effort flows where it matters most.",
+        "highlight": "Prioritize by consequence"
+      },
+      "shiftLeft": {
+        "title": "Shift-Left Approach",
+        "description": "Defects are cheapest at the source. Quality gates, DoD/DoR definitions, and 3-Amigos sessions bring quality thinking into requirements and design — before a single line is written.",
+        "highlight": "Quality starts at discovery"
+      },
+      "automationSafety": {
+        "title": "Automation as Safety Net",
+        "description": "Automation is not a replacement for thinking — it's a permanent guardian. Well-designed automated suites protect known behavior, freeing exploratory effort for the unknown.",
+        "highlight": "Protect what is known"
+      },
+      "cicdGovernance": {
+        "title": "CI/CD as Quality Governance",
+        "description": "Deployment pipelines are quality enforcement mechanisms. Tests as gates transform CI/CD from delivery infrastructure into a continuous quality audit system.",
+        "highlight": "Gates over gates"
+      },
+      "collaboration": {
+        "title": "Collaboration over Silos",
+        "description": "Quality is a shared organizational responsibility. Cross-functional alignment between Product, Dev, and QA removes late-stage surprises and builds shared ownership of outcomes.",
+        "highlight": "Shared accountability"
+      }
+    }
+  },
+  "devops": {
+    "sectionTag": "Technical Edge",
+    "title": "DevOps & AI in QA",
+    "subtitle": "Expanding quality engineering beyond test authoring — into pipeline architecture, containerization, and AI-augmented workflows.",
+    "devopsTag": "DevOps Engineering",
+    "aiTag": "AI in QA",
+    "toolStackLabel": "Tool Stack",
+    "andMore": "and More...",
+    "skills": {
+      "docker": {
+        "title": "Docker Containerization",
+        "description": "Containerized test environments enabling reproducible, environment-agnostic test execution. Tests run consistently across local, staging, and CI runners."
+      },
+      "yaml": {
+        "title": "YAML Pipeline Debugging",
+        "description": "Proficient in authoring and debugging Azure DevOps and GitHub Actions pipelines. Ability to diagnose pipeline failures and optimize stage execution order."
+      },
+      "cicdGates": {
+        "title": "CI/CD Quality Gates",
+        "description": "Designed test-as-gate patterns that enforce quality thresholds before deployment proceeds. Quality becomes a non-negotiable constraint in the delivery process."
+      },
+      "aiRequirements": {
+        "title": "AI-Assisted Requirement Analysis",
+        "description": "Using AI tools to surface ambiguities, identify missing edge cases, and accelerate requirement validation — reducing defects that originate in story gaps."
+      },
+      "aiTestGen": {
+        "title": "AI-Supported Test Generation",
+        "description": "Leveraging generative AI to accelerate test case authoring for happy paths and boundary conditions. AI as a force multiplier for test coverage — not a replacement for judgment."
+      },
+      "logSummarization": {
+        "title": "Log Summarization & Defect Triage",
+        "description": "AI-assisted analysis of build logs and error traces. Faster root cause identification reduces time-to-resolution and keeps deployment velocity high."
+      }
+    }
+  },
+  "leadership": {
+    "sectionTag": "Ready to Lead",
+    "title": "Leadership &",
+    "titleLine2": "Consulting",
+    "titleLine3": "Readiness",
+    "intro1": "A Test Lead is not a senior tester — it is a quality strategist, team coach, and organizational influencer.",
+    "intro2": "These capabilities have been demonstrated across real engagements — not theoretical frameworks.",
+    "indicators": {
+      "crossFunctional": "Cross-functional team alignment",
+      "strategicQuality": "Strategic quality ownership",
+      "processDesign": "Process design from scratch",
+      "executiveComm": "Executive-level communication",
+      "teamCoaching": "Engineering team coaching"
+    },
+    "areas": {
+      "stakeholder": {
+        "title": "Stakeholder Communication",
+        "points": [
+          "Translating technical quality risks into business-impact language.",
+          "Presenting coverage reports and sprint quality metrics to product owners.",
+          "Bridging technical and business decision-making conversations."
+        ]
+      },
+      "challenge": {
+        "title": "Constructive Challenge",
+        "points": [
+          "Challenging unrealistic deadlines using data.",
+          "Raising quality risks early before commitments lock in.",
+          "Advocating sustainable delivery over short-term velocity."
+        ]
+      },
+      "refinement": {
+        "title": "User Story Refinement",
+        "points": [
+          "Improving acceptance criteria clarity with Product Owners.",
+          "Facilitating 3-Amigos alignment sessions.",
+          "Introducing Definition of Ready frameworks."
+        ]
+      },
+      "training": {
+        "title": "Internal Training & Enablement",
+        "points": [
+          "Delivered internal Playwright training sessions.",
+          "Coached engineers on test design principles, locator strategies, and maintainable test architecture.",
+          "Positioned QA as a shared team capability."
+        ]
+      }
+    }
+  },
+  "contact": {
+    "sectionTag": "Get in Touch",
+    "title": "Let's Build Reliable Systems",
+    "description1": "If you're looking for a consultant who transforms quality from a checkpoint into a competitive advantage and brings quality strategy, not just test execution — let's talk.",
+    "description2": "I design quality systems that scale, mentor teams that grow, and establish processes that outlast the engagement.",
+    "emailButton": "SEND AN EMAIL",
+    "linkedinButton": "CONNECT ON LINKEDIN",
+    "footerName": "Muhammad Ali Anwar · Senior QA Engineer",
+    "footerLocation": "Stavanger, Norway"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops! Page not found",
+    "returnHome": "Return to Home"
+  }
+}

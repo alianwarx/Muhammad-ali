@@ -1,59 +1,61 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
-const milestones = [
-  {
-    id: 1,
-    label: "Islamia University",
-    sub: "Bahawalpur, Pakistan",
-    x: 80,
-    y: 220,
-    summary: "Bachelor's degree — Built foundation in Computer Science and software development.",
-  },
-  {
-    id: 2,
-    label: "University of Stavanger",
-    sub: "Stavanger, Norway",
-    x: 250,
-    y: 120,
-    summary: "Master's in Computer Science — Specialized in Data Science and deepened expertise in software engineering, software quality, distributed systems, and research-driven engineering.",
-  },
-  {
-    id: 3,
-    label: "Laerdal Medical",
-    sub: "Developer",
-    x: 400,
-    y: 180,
-    summary: "Unity-based 3D simulation integrated with physical medical manikin reacting to real-time data. Gained deep understanding of real-time data systems and quality from a development perspective.",
-  },
-  {
-    id: 4,
-    label: "Equinor",
-    sub: "QA Engineer",
-    x: 530,
-    y: 100,
-    summary: "Transitioned from manual-heavy testing to Playwright automation. Introduced structured regression frameworks reducing dependency on ad-hoc testing and increasing release predictability.",
-  },
-  {
-    id: 5,
-    label: "Sekal",
-    sub: "Automation & CI/CD",
-    x: 660,
-    y: 170,
-    summary: "Tackled complex C#/Redis/Server/Web architecture. Implemented data-driven POM framework and integrated tests as CI/CD deployment gates, significantly reducing deployment instability.",
-  },
-  {
-    id: 6,
-    label: "Lyse",
-    sub: "QA Framework Design",
-    x: 800,
-    y: 90,
-    summary: "Built QA from zero structured QA. Introduced DoD, DoR, 3-Amigos, test strategy, Scrum ceremonies, pipeline validation, k6 performance testing, WCAG compliance accessibility. Transformed the devlopment into a streamlined, quality-focused process with a strong emphasis on automation and continuous improvement.",
-  },
-];
-
 export default function JourneyMap() {
+  const { t } = useTranslation();
   const [active, setActive] = useState<number | null>(null);
+
+  const milestones = [
+    {
+      id: 1,
+      label: t("journey.milestones.1.label"),
+      sub: t("journey.milestones.1.sub"),
+      x: 80,
+      y: 220,
+      summary: t("journey.milestones.1.summary"),
+    },
+    {
+      id: 2,
+      label: t("journey.milestones.2.label"),
+      sub: t("journey.milestones.2.sub"),
+      x: 250,
+      y: 120,
+      summary: t("journey.milestones.2.summary"),
+    },
+    {
+      id: 3,
+      label: t("journey.milestones.3.label"),
+      sub: t("journey.milestones.3.sub"),
+      x: 400,
+      y: 180,
+      summary: t("journey.milestones.3.summary"),
+    },
+    {
+      id: 4,
+      label: t("journey.milestones.4.label"),
+      sub: t("journey.milestones.4.sub"),
+      x: 530,
+      y: 100,
+      summary: t("journey.milestones.4.summary"),
+    },
+    {
+      id: 5,
+      label: t("journey.milestones.5.label"),
+      sub: t("journey.milestones.5.sub"),
+      x: 660,
+      y: 170,
+      summary: t("journey.milestones.5.summary"),
+    },
+    {
+      id: 6,
+      label: t("journey.milestones.6.label"),
+      sub: t("journey.milestones.6.sub"),
+      x: 800,
+      y: 90,
+      summary: t("journey.milestones.6.summary"),
+    },
+  ];
 
   const pathD = `M ${milestones.map((m) => `${m.x} ${m.y}`).join(" L ")}`;
   const totalLength = 1200;
@@ -63,13 +65,13 @@ export default function JourneyMap() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12 fade-up">
           <p className="text-sm font-medium tracking-widest uppercase text-accent mb-2">
-            The Path
+            {t("journey.sectionTag")}
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
-            From Pakistan to Norway
+            {t("journey.title")}
           </h2>
           <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
-            From Pakistan to Norway — an academic and professional path built on continuous growth and transformation.
+            {t("journey.subtitle")}
           </p>
         </div>
 
@@ -144,7 +146,7 @@ export default function JourneyMap() {
         <div className="flex justify-center mt-6">
           <div className="flex items-center gap-2 text-center">
             <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#0F2A4A" }} />
-            <span style={{ fontSize: "0.72rem", color: "#718096", fontWeight: 500 }}>Hover on the nodes to explore</span>
+            <span style={{ fontSize: "0.72rem", color: "#718096", fontWeight: 500 }}>{t("journey.hoverHint")}</span>
           </div>
         </div>
         </div>
