@@ -66,7 +66,7 @@ export default function HeroSection() {
               <div className="flex justify-center md:justify-end fade-up">
                   <div className="rounded-full border-4 border-primary bg-secondary flex items-center justify-center overflow-hidden">
                     <img
-                      src="data/main-photo.jpeg"
+                      src="./data/main-photo.jpeg"
                       alt="Muhammad Ali Anwar"
                       className="object-cover w-full h-full"
                     />
