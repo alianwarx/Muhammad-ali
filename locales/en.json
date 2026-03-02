@@ -16,7 +16,7 @@
     "firstName": "Muhammad Ali",
     "lastName": "Anwar",
     "subtitle": "Senior QA Engineer · Automation · DevOps-Driven Quality",
-    "quote": "\"I design quality systems —— not just test cases.\"",
+    "quote": "\"Design quality systems —— not just test cases.\"",
     "badgeRiskTesting": "Risk-Based Testing",
     "badgeTools": "Playwright · k6 · BrowserStack",
     "badgeCICD": "CI/CD Integration",
