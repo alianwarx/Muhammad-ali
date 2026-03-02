@@ -215,6 +215,7 @@ export default function CaseStudies() {
 
   return (
     <div
+      id="cases"
       ref={sectionRef}
       className="section-fade"
       style={{ padding: "6rem 0", background: "#f5f8f8" }}

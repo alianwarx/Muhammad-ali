@@ -52,6 +52,7 @@ export default function QualityPhilosophy() {
 
   return (
     <div
+      id="philosophy"
       ref={sectionRef}
       className="section-fade"
       style={{ padding: "6rem 0", background: "white" }}

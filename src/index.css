@@ -148,4 +148,65 @@
     transition: all 0.25s ease;
   }
 
+  /* Journey Photos Gallery */
+  @keyframes photo-fade-in {
+    from {
+      opacity: 0;
+      transform: scale(0.8) rotate(var(--rotation));
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) rotate(var(--rotation));
+    }
+  }
+
+  .journey-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 
+      0 4px 16px rgba(0, 0, 0, 0.08),
+      0 8px 24px rgba(0, 0, 0, 0.06);
+    transform: rotate(var(--rotation));
+    transition: 
+      transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+      box-shadow 0.4s ease,
+      filter 0.4s ease;
+    will-change: transform, box-shadow;
+    display: block;
+    opacity: 0;
+    animation: photo-fade-in 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    animation-delay: var(--animation-delay);
+  }
+
+  .journey-photo.visible {
+    opacity: 1;
+  }
+
+  /* Hover state: scale up and straighten */
+  .journey-photo-wrapper:hover .journey-photo {
+    transform: rotate(0deg) scale(1.08);
+    box-shadow: 
+      0 12px 32px rgba(0, 0, 0, 0.15),
+      0 16px 40px rgba(0, 0, 0, 0.12);
+    filter: brightness(1.05);
+  }
+
+  /* Mobile touch interaction fallback */
+  @media (hover: none) {
+    .journey-photo-wrapper:active .journey-photo {
+      transform: rotate(0deg) scale(1.06);
+      box-shadow: 
+        0 8px 24px rgba(0, 0, 0, 0.12),
+        0 12px 32px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  /* Prevent layout shift on image load */
+  .journey-photos-container img {
+    margin: 0;
+    padding: 0;
+  }
+
 }

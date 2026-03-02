@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import JourneyPhotos from "./JourneyPhotos";
 
 export default function JourneyMap() {
   const { t } = useTranslation();
@@ -76,6 +77,9 @@ export default function JourneyMap() {
         </div>
 
         <div className="fade-up overflow-x-auto" style={{ transitionDelay: "0.2s" }}>
+          <div className="mt-8 mb-6 fade-up" style={{ transitionDelay: "0.3s" }}>
+            <JourneyPhotos />
+          </div>
           <svg viewBox="0 0 900 300" className="w-full min-w-[700px] h-auto">
             {/* Animated path */}
             <path
@@ -150,7 +154,7 @@ export default function JourneyMap() {
           </div>
         </div>
         </div>
-      </div>
+        </div>
     </section>
   );
 }
