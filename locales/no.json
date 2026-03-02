@@ -16,7 +16,7 @@
     "firstName": "Muhammad Ali",
     "lastName": "Anwar",
     "subtitle": "Senior QA-ingeniør · Automatisering · DevOps-drevet kvalitet",
-    "quote": "«Jeg designer kvalitetssystemer — ikke bare testtilfeller.»",
+    "quote": "«Designer kvalitetssystemer — ikke bare testtilfeller.»",
     "badgeRiskTesting": "Risikobasert testing",
     "badgeTools": "Playwright · k6 · BrowserStack",
     "badgeCICD": "CI/CD-integrasjon",
