@@ -1,70 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { ChevronDown, ChevronUp, Target, Zap, TrendingUp, Users } from "lucide-react";
 
-const cases = [
-  {
-    id: "equinor",
-    company: "Equinor",
-    industry: "Energy · Enterprise",
-    headline: "From Manual Regression to Automated Confidence",
-    context:
-      "A manual-heavy regression process with no structured automation strategy. Release cycles were unpredictable, and test coverage depended entirely on individual effort and institutional memory.",
-    action:
-      "Introduced Playwright-based automation for regression coverage. Designed reusable test suites aligned with release checkpoints. Established the concept of a 'quality baseline' that teams could rely on across releases.",
-    impact:
-      "Increased release predictability. Reduced time spent on repetitive regression. Created a foundation for scalable automation that outlasted the engagement.",
-    leadership:
-      "Advocated for automation investment to stakeholders. Trained team members on test scripting principles. Positioned QA as a strategic function rather than a final-stage bottleneck.",
-    tags: ["Playwright", "Regression Automation", "Enterprise QA"],
-  },
-  {
-    id: "sekal",
-    company: "Sekal",
-    industry: "Oil & Gas · Deep Tech",
-    headline: "CI/CD Quality Gates for a Complex Legacy Architecture",
-    context:
-      "A complex technical stack — C#, Redis, Web Portal — with loosely coupled services and no automated quality guardrails. Deployments were frequent, and instability was common.",
-    action:
-      "Implemented a data-driven Page Object Model (POM) framework. Mapped test coverage to deployment risk zones. Integrated automated test suites as hard deployment gates within CI/CD pipelines. Structured cross-team test ownership.",
-    impact:
-      "Reduced deployment instability. Established automated quality governance as a CI/CD norm. Improved cross-team collaboration by clarifying test responsibilities across 10+ system interfaces.",
-    leadership:
-      "Collaborated with architects and DevOps to design pipeline integration. Surfaced quality risks early in planning sessions. Built cross-functional trust through transparent defect triage.",
-    tags: ["C# · Redis", "Data-Driven POM", "CI/CD Gates", "10+ Systems"],
-  },
-  {
-    id: "lyse",
-    company: "Lyse",
-    industry: "Utilities · Consumer Tech",
-    headline: "Establishing QA Culture from Zero",
-    context:
-      "No structured QA process existed. Sprints lacked clear acceptance criteria, test strategy was absent, and quality was treated as an implicit developer responsibility.",
-    action:
-      "Introduced Definition of Done (DoD), Definition of Ready (DoR), and 3-Amigos sessions. Authored the first formal Test Strategy. Integrated pipeline validation. Launched k6 performance testing and WCAG accessibility compliance checks.",
-    impact:
-      "Transformed sprint predictability. Enabled early defect detection before code reached staging. Established accessibility and performance as measurable quality dimensions — not afterthoughts.",
-    leadership:
-      "Drove QA process design from the ground up with Product Owner alignment. Facilitated Scrum ceremonies and Poker Planning sessions. Became the quality anchor for the entire product organization.",
-    tags: ["k6 Performance", "WCAG Accessibility", "Test Strategy", "3-Amigos"],
-  },
-  {
-    id: "laerdal",
-    company: "Laerdal Medical",
-    industry: "MedTech · Simulation",
-    headline: "Quality Engineering in Safety-Critical Medical Simulation",
-    context:
-      "A Unity-based 3D simulation platform integrated with physical medical manikins responding to real-time physiological data. The stakes: training healthcare professionals for life-critical scenarios.",
-    action:
-      "Developed and tested simulation logic ensuring accurate physical-digital synchronization. Built understanding of system integration between hardware sensors, real-time data streams, and 3D rendering pipelines.",
-    impact:
-      "Contributed to a product used in hospital training programs globally. Built deep cross-domain knowledge — software, hardware, domain logic — that shaped a uniquely holistic approach to quality.",
-    leadership:
-      "Operated at the intersection of engineering and domain expertise. Collaborated with medical experts and hardware engineers. This experience directly informed later QA strategy work by understanding quality from a developer's perspective.",
-    tags: ["Unity", "Real-Time Data", "Medical Simulation", "Hardware Integration"],
-  },
-];
-
-function CaseCard({ c }) {
+function CaseCard({ caseId, c }) {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
 
   return (
@@ -127,9 +66,9 @@ function CaseCard({ c }) {
             {c.headline}
           </h3>
           <div className="flex flex-wrap gap-1.5">
-            {c.tags.map((t) => (
-              <span key={t} className="tag">
-                {t}
+            {c.tags.map((tag) => (
+              <span key={tag} className="tag">
+                {tag}
               </span>
             ))}
           </div>
@@ -159,25 +98,25 @@ function CaseCard({ c }) {
             {[
               {
                 icon: <Target size={14} />,
-                label: "Context",
+                label: t("cases.contextLabel"),
                 content: c.context,
                 color: "#64748B",
               },
               {
                 icon: <Zap size={14} />,
-                label: "Action",
+                label: t("cases.actionLabel"),
                 content: c.action,
                 color: "#1A3D6B",
               },
               {
                 icon: <TrendingUp size={14} />,
-                label: "Impact",
+                label: t("cases.impactLabel"),
                 content: c.impact,
                 color: "#2A7A5A",
               },
               {
                 icon: <Users size={14} />,
-                label: "Leadership",
+                label: t("cases.leadershipLabel"),
                 content: c.leadership,
                 color: "#0F2A4A",
               },
@@ -213,7 +152,55 @@ function CaseCard({ c }) {
 }
 
 export default function CaseStudies() {
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
+
+  const cases = [
+    {
+      id: "equinor",
+      company: t("cases.equinor.company"),
+      industry: t("cases.equinor.industry"),
+      headline: t("cases.equinor.headline"),
+      context: t("cases.equinor.context"),
+      action: t("cases.equinor.action"),
+      impact: t("cases.equinor.impact"),
+      leadership: t("cases.equinor.leadership"),
+      tags: t("cases.equinor.tags").split(" · "),
+    },
+    {
+      id: "sekal",
+      company: t("cases.sekal.company"),
+      industry: t("cases.sekal.industry"),
+      headline: t("cases.sekal.headline"),
+      context: t("cases.sekal.context"),
+      action: t("cases.sekal.action"),
+      impact: t("cases.sekal.impact"),
+      leadership: t("cases.sekal.leadership"),
+      tags: t("cases.sekal.tags").split(" · "),
+    },
+    {
+      id: "lyse",
+      company: t("cases.lyse.company"),
+      industry: t("cases.lyse.industry"),
+      headline: t("cases.lyse.headline"),
+      context: t("cases.lyse.context"),
+      action: t("cases.lyse.action"),
+      impact: t("cases.lyse.impact"),
+      leadership: t("cases.lyse.leadership"),
+      tags: t("cases.lyse.tags").split(" · "),
+    },
+    {
+      id: "laerdal",
+      company: t("cases.laerdal.company"),
+      industry: t("cases.laerdal.industry"),
+      headline: t("cases.laerdal.headline"),
+      context: t("cases.laerdal.context"),
+      action: t("cases.laerdal.action"),
+      impact: t("cases.laerdal.impact"),
+      leadership: t("cases.laerdal.leadership"),
+      tags: t("cases.laerdal.tags").split(" · "),
+    },
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -228,6 +215,7 @@ export default function CaseStudies() {
 
   return (
     <div
+      id="cases"
       ref={sectionRef}
       className="section-fade"
       style={{ padding: "6rem 0", background: "#f5f8f8" }}
@@ -235,18 +223,18 @@ export default function CaseStudies() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16 fade-up">
           <p className="text-sm font-medium tracking-widest uppercase text-accent mb-2">
-            Proven Results
+            {t("cases.sectionTag")}
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
-            Case Studies
+            {t("cases.title")}
           </h2>
           <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
-            Four engagements that demonstrate transformation capability — from automation design to cultural change.
+            {t("cases.subtitle")}
           </p>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           {cases.map((c) => (
-            <CaseCard key={c.id} c={c} />
+            <CaseCard key={c.id} caseId={c.id} c={c} />
           ))}
         </div>
       </div>

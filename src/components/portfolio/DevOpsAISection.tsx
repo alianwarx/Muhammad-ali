@@ -1,65 +1,63 @@
+import { useTranslation } from "react-i18next";
 import { Container, FileCode, GitMerge, Brain, FileSearch, FlaskConical } from "lucide-react";
 
-const devopsSkills = [
-  {
-  icon: Container,
-    title: "Docker Containerization",
-    description:
-      "Containerized test environments enabling reproducible, environment-agnostic test execution. Tests run consistently across local, staging, and CI runners.",
-    category: "DevOps",
-  },
-  {
-  icon: FileCode,
-    title: "YAML Pipeline Debugging",
-    description:
-      "Proficient in authoring and debugging Azure DevOps and GitHub Actions pipelines. Ability to diagnose pipeline failures and optimize stage execution order.",
-    category: "DevOps",
-  },
-  {
-  icon: GitMerge,
-    title: "CI/CD Quality Gates",
-    description:
-      "Designed test-as-gate patterns that enforce quality thresholds before deployment proceeds. Quality becomes a non-negotiable constraint in the delivery process.",
-    category: "DevOps",
-  },
-  {
-  icon: Brain,
-    title: "AI-Assisted Requirement Analysis",
-    description:
-      "Using AI tools to surface ambiguities, identify missing edge cases, and accelerate requirement validation — reducing defects that originate in story gaps.",
-    category: "AI in QA",
-  },
-  {
-  icon: FlaskConical,
-    title: "AI-Supported Test Generation",
-    description:
-      "Leveraging generative AI to accelerate test case authoring for happy paths and boundary conditions. AI as a force multiplier for test coverage — not a replacement for judgment.",
-    category: "AI in QA",
-  },
-  {
-  icon: FileSearch,
-    title: "Log Summarization & Defect Triage",
-    description:
-      "AI-assisted analysis of build logs and error traces. Faster root cause identification reduces time-to-resolution and keeps deployment velocity high.",
-    category: "AI in QA",
-  },
-];
-
 export default function DevOpsAISection() {
-    const devops = devopsSkills.filter((s) => s.category === "DevOps");
+  const { t } = useTranslation();
+
+  const devopsSkills = [
+    {
+      icon: Container,
+      title: t("devops.skills.docker.title"),
+      description: t("devops.skills.docker.description"),
+      category: "DevOps",
+    },
+    {
+      icon: FileCode,
+      title: t("devops.skills.yaml.title"),
+      description: t("devops.skills.yaml.description"),
+      category: "DevOps",
+    },
+    {
+      icon: GitMerge,
+      title: t("devops.skills.cicdGates.title"),
+      description: t("devops.skills.cicdGates.description"),
+      category: "DevOps",
+    },
+    {
+      icon: Brain,
+      title: t("devops.skills.aiRequirements.title"),
+      description: t("devops.skills.aiRequirements.description"),
+      category: "AI in QA",
+    },
+    {
+      icon: FlaskConical,
+      title: t("devops.skills.aiTestGen.title"),
+      description: t("devops.skills.aiTestGen.description"),
+      category: "AI in QA",
+    },
+    {
+      icon: FileSearch,
+      title: t("devops.skills.logSummarization.title"),
+      description: t("devops.skills.logSummarization.description"),
+      category: "AI in QA",
+    },
+  ];
+
+  const devops = devopsSkills.filter((s) => s.category === "DevOps");
   const ai = devopsSkills.filter((s) => s.category === "AI in QA");
+
   return (
     <section className="py-24">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16 fade-up">
           <p className="text-sm font-medium tracking-widest uppercase text-accent mb-2">
-            Technical Edge
+            {t("devops.sectionTag")}
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
-            DevOps & AI in QA
+            {t("devops.title")}
           </h2>
           <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
-            Expanding quality engineering beyond test authoring — into pipeline architecture, containerization, and AI-augmented workflows.
+            {t("devops.subtitle")}
           </p>
         </div>
 
@@ -73,7 +71,7 @@ export default function DevOpsAISection() {
                 borderBottom: "1px solid #E2E8F0",
               }}
             >
-              <span className="tag">DevOps Engineering</span>
+              <span className="tag">{t("devops.devopsTag")}</span>
             </div>
             <div className="space-y-5">
               {devops.map((s, i) => (
@@ -84,24 +82,24 @@ export default function DevOpsAISection() {
                     gap: "1rem",
                     alignItems: "flex-start",
                   }}
-                  >
+                >
                   <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
-                  <s.icon className="w-5 h-5 text-accent" />
+                    <s.icon className="w-5 h-5 text-accent" />
                   </div>
-                    <div>
-                      <h3
-                        style={{
-                          fontSize: "0.9rem",
-                          fontWeight: 700,
-                          color: "#0F2A4A",
-                          marginBottom: "0.3rem",
-                        }}
-                      >
-                        {s.title}
-                      </h3>
-                      <p style={{ fontSize: "0.82rem", color: "#4A5568", lineHeight: 1.7 }}>
-                        {s.description}
-                      </p>
+                  <div>
+                    <h3
+                      style={{
+                        fontSize: "0.9rem",
+                        fontWeight: 700,
+                        color: "#0F2A4A",
+                        marginBottom: "0.3rem",
+                      }}
+                    >
+                      {s.title}
+                    </h3>
+                    <p style={{ fontSize: "0.82rem", color: "#4A5568", lineHeight: 1.7 }}>
+                      {s.description}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -117,7 +115,7 @@ export default function DevOpsAISection() {
                 borderBottom: "1px solid #E2E8F0",
               }}
             >
-              <span className="tag">AI in QA</span>
+              <span className="tag">{t("devops.aiTag")}</span>
             </div>
             <div className="space-y-5">
               {ai.map((s, i) => (
@@ -128,24 +126,24 @@ export default function DevOpsAISection() {
                     gap: "1rem",
                     alignItems: "flex-start",
                   }}
-                  >
+                >
                   <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
-                  <s.icon className="w-5 h-5 text-accent" />
+                    <s.icon className="w-5 h-5 text-accent" />
                   </div>
-                    <div>
-                      <h3
-                        style={{
-                          fontSize: "0.9rem",
-                          fontWeight: 700,
-                          color: "#0F2A4A",
-                          marginBottom: "0.3rem",
-                        }}
-                      >
-                        {s.title}
-                      </h3>
-                      <p style={{ fontSize: "0.82rem", color: "#4A5568", lineHeight: 1.7 }}>
-                        {s.description}
-                      </p>
+                  <div>
+                    <h3
+                      style={{
+                        fontSize: "0.9rem",
+                        fontWeight: 700,
+                        color: "#0F2A4A",
+                        marginBottom: "0.3rem",
+                      }}
+                    >
+                      {s.title}
+                    </h3>
+                    <p style={{ fontSize: "0.82rem", color: "#4A5568", lineHeight: 1.7 }}>
+                      {s.description}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -154,52 +152,52 @@ export default function DevOpsAISection() {
         </div>
         {/* Tool stack */}
         <div
+          style={{
+            marginTop: "3rem",
+            padding: "1.5rem 2rem",
+            background: "white",
+            border: "1px solid #E2E8F0",
+            borderRadius: "8px",
+          }}
+          className="fade-up"
+        >
+          <p
             style={{
-              marginTop: "3rem",
-              padding: "1.5rem 2rem",
-              background: "white",
-              border: "1px solid #E2E8F0",
-              borderRadius: "8px",
+              fontSize: "0.65rem",
+              fontWeight: 800,
+              letterSpacing: "0.16em",
+              textTransform: "uppercase",
+              color: "#718096",
+              marginBottom: "1rem",
             }}
-            className="fade-up"
           >
-            <p
-              style={{
-                fontSize: "0.65rem",
-                fontWeight: 800,
-                letterSpacing: "0.16em",
-                textTransform: "uppercase",
-                color: "#718096",
-                marginBottom: "1rem",
-              }}
-            >
-              Tool Stack
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {[
-                "Playwright",
-                "k6",
-                "Docker",
-                "Azure DevOps",
-                "GitHub Actions",
-                "C#",
-                "JavaScript",
-                "Python",
-                "Redis",
-                "YAML",
-                "WCAG 2.1",
-                "Postman",
-                "Git",
-                "Jira",
-                "Confluence",
-                "and More...",
-              ].map((tool) => (
-                <span key={tool} className="tag">
-                  {tool}
-                </span>
-              ))}
-            </div>
+            {t("devops.toolStackLabel")}
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {[
+              "Playwright",
+              "k6",
+              "Docker",
+              "Azure DevOps",
+              "GitHub Actions",
+              "C#",
+              "JavaScript",
+              "Python",
+              "Redis",
+              "YAML",
+              "WCAG 2.1",
+              "Postman",
+              "Git",
+              "Jira",
+              "Confluence",
+              t("devops.andMore"),
+            ].map((tool) => (
+              <span key={tool} className="tag">
+                {tool}
+              </span>
+            ))}
           </div>
+        </div>
       </div>
     </section>
   );

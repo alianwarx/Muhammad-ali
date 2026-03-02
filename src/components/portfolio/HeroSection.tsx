@@ -1,20 +1,10 @@
 import React, { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { ChevronDown, Shield, Cpu, GitBranch, ArrowDown } from "lucide-react";
-
-
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
-
-const links = [
-  { label: "Journey", href: "#journey" },
-  { label: "Evolution", href: "#evolution" },
-  { label: "Case Studies", href: "#cases" },
-  { label: "Impact", href: "#impact" },
-  { label: "Philosophy", href: "#philosophy" },
-  { label: "Contact", href: "#contact" },
-];
 
 export default function HeroSection() {
+  const { t } = useTranslation();
   const heroRef = useRef(null);
 
   useEffect(() => {
@@ -67,7 +57,7 @@ export default function HeroSection() {
                   <div className="rounded-full border-4 border-primary bg-secondary flex items-center justify-center overflow-hidden">
                     <img
                       src="data/main-photo.jpeg"
-                      alt="Muhammad Ali Anwar"
+                      alt={t("hero.photoAlt")}
                       className="object-cover w-full h-full"
                     />
                   </div>
@@ -96,7 +86,7 @@ export default function HeroSection() {
                       marginBottom: "0.2rem",
                     }}
                   >
-                    Based in
+                    {t("hero.basedIn")}
                   </p>
                   <p
                     style={{
@@ -105,8 +95,8 @@ export default function HeroSection() {
                       fontWeight: 700,
                     }}
                   >
-                  Stavanger, Norway
-                </p>
+                    {t("hero.location")}
+                  </p>
               </div>
             </div>
           </div>
@@ -136,7 +126,7 @@ export default function HeroSection() {
                   color: "#2A7A5A",
                 }}
               >
-                Senior QA Engineer · Test Lead
+                {t("hero.roleTag")}
               </span>
             </div>
 
@@ -150,9 +140,9 @@ export default function HeroSection() {
                 marginBottom: "1rem",
               }}
             >
-              Muhammad Ali
+              {t("hero.firstName")}
               <br />
-              <span style={{ color: "#0d3826" }}>Anwar</span>
+              <span style={{ color: "#0d3826" }}>{t("hero.lastName")}</span>
             </h1>
 
             <p
@@ -164,7 +154,7 @@ export default function HeroSection() {
                 lineHeight: 1.5,
               }}
             >
-              Senior QA Engineer · Automation · DevOps-Driven Quality
+              {t("hero.subtitle")}
             </p>
             <blockquote
               style={{
@@ -174,15 +164,15 @@ export default function HeroSection() {
                 margin: "2rem 0",
               }}
              className="border-l-4 border-accent pl-4 text-xl italic text-primary/80">
-              "Design quality systems ——<br /> not just test cases."
+              {t("hero.quote")}
             </blockquote>
             
 
             <div className="flex flex-wrap gap-3 mb-8">
               {[
-                { icon: <Shield size={13} />, label: "Risk-Based Testing" },
-                { icon: <Cpu size={13} />, label: "Playwright · k6 · BrowserStack" },
-                { icon: <GitBranch size={13} />, label: "CI/CD Integration" },
+                { icon: <Shield size={13} />, label: t("hero.badgeRiskTesting") },
+                { icon: <Cpu size={13} />, label: t("hero.badgeTools") },
+                { icon: <GitBranch size={13} />, label: t("hero.badgeCICD") },
               ].map((badge) => (
                 <span key={badge.label} className="tag flex items-center gap-1.5">
                   {badge.icon}
@@ -193,7 +183,7 @@ export default function HeroSection() {
       {/* CTA Button */}
             <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 gap-2" asChild>
               <a href="#journey">
-                Explore My Journey <ArrowDown size={18} />
+                {t("hero.cta")} <ArrowDown size={18} />
               </a>
             </Button>
           </div>

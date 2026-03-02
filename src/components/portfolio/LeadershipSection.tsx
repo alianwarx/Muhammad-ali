@@ -1,45 +1,27 @@
+import { useTranslation } from "react-i18next";
 import { MessageCircle, Clock, GitPullRequest, Presentation } from "lucide-react";
 
-const leadershipAreas = [
-  {
-    icon: MessageCircle,
-    title: "Stakeholder Communication",
-    points: [
-      "Translating technical quality risks into business-impact language.",
-      "Presenting coverage reports and sprint quality metrics to product owners.",
-      "Bridging technical and business decision-making conversations.",
-    ],
-  },
-  {
-    icon: Clock,
-    title: "Constructive Challenge",
-    points: [
-      "Challenging unrealistic deadlines using data.",
-      "Raising quality risks early before commitments lock in.",
-      "Advocating sustainable delivery over short-term velocity.",
-    ],
-  },
-  {
-    icon: GitPullRequest,
-    title: "User Story Refinement",
-    points: [
-      "Improving acceptance criteria clarity with Product Owners.",
-      "Facilitating 3-Amigos alignment sessions.",
-      "Introducing Definition of Ready frameworks.",
-    ],
-  },
-  {
-    icon: Presentation,
-    title: "Internal Training & Enablement",
-    points: [
-      "Delivered internal Playwright training sessions.",
-      "Coached engineers on test design principles, locator strategies, and maintainable test architecture.",
-      "Positioned QA as a shared team capability.",
-    ],
-  },
-];
-
 export default function Leadership() {
+  const { t } = useTranslation();
+
+  const leadershipAreaKeys = [
+    { icon: MessageCircle, key: "stakeholder" },
+    { icon: Clock, key: "challenge" },
+    { icon: GitPullRequest, key: "refinement" },
+    { icon: Presentation, key: "training" },
+  ];
+
+  const leadershipAreas = leadershipAreaKeys.map((area) => ({
+    icon: area.icon,
+    key: area.key,
+    title: t(`leadership.areas.${area.key}.title`),
+    points: [
+      t(`leadership.areas.${area.key}.points.0`),
+      t(`leadership.areas.${area.key}.points.1`),
+      t(`leadership.areas.${area.key}.points.2`),
+    ],
+  }));
+
   return (
     <section className="py-24 bg-section-alt">
       <div className="max-w-6xl mx-auto px-6">
@@ -49,38 +31,36 @@ export default function Leadership() {
           {/* LEFT SIDE */}
           <div className="lg:col-span-2 fade-up">
             <p className="text-sm font-medium tracking-widest uppercase text-accent mb-2">
-              Ready to Lead
+              {t("leadership.sectionTag")}
             </p>
 
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              Leadership & <br />
-              Consulting <br />
-              Readiness
+              {t("leadership.title")} <br />
+              {t("leadership.titleLine2")} <br />
+              {t("leadership.titleLine3")}
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              A Test Lead is not a senior tester — it is a quality strategist,
-              team coach, and organizational influencer.
+              {t("leadership.intro1")}
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-8">
-              These capabilities have been demonstrated across real engagements —
-              not theoretical frameworks.
+              {t("leadership.intro2")}
             </p>
 
             {/* Consulting Indicators */}
             <div className="space-y-3">
               {[
-                "Cross-functional team alignment",
-                "Strategic quality ownership",
-                "Process design from scratch",
-                "Executive-level communication",
-                "Engineering team coaching",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-3">
+                "crossFunctional",
+                "strategicQuality",
+                "processDesign",
+                "executiveComm",
+                "teamCoaching",
+              ].map((indicatorKey, i) => (
+                <div key={i} className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-accent" />
                   <span className="text-sm text-muted-foreground font-medium">
-                    {item}
+                    {t(`leadership.indicators.${indicatorKey}`)}
                   </span>
                 </div>
               ))}
@@ -91,7 +71,7 @@ export default function Leadership() {
           <div className="lg:col-span-3 grid sm:grid-cols-2 gap-6">
             {leadershipAreas.map((area, i) => (
               <div
-                key={area.title}
+                key={area.key}
                 className="p-6 rounded-xl bg-card border border-border fade-up transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                 style={{ transitionDelay: `${i * 0.1}s` }}
               >

@@ -1,0 +1,291 @@
+{
+  "navbar": {
+    "brand": "MUHAMMAD ALI ANWAR",
+    "journey": "Reisen",
+    "evolution": "Utvikling",
+    "caseStudies": "Casestudier",
+    "impact": "Resultater",
+    "philosophy": "Filosofi",
+    "contact": "Kontakt",
+    "letsConnect": "TA KONTAKT",
+    "exploreMyJourney": "Utforsk reisen min",
+    "languageToggleLabel": "Bytt språk"
+  },
+  "hero": {
+    "roleTag": "Senior QA-ingeniør · Testleder",
+    "firstName": "Muhammad Ali",
+    "lastName": "Anwar",
+    "subtitle": "Senior QA-ingeniør · Automatisering · DevOps-drevet kvalitet",
+    "quote": "«Jeg designer kvalitetssystemer — ikke bare testtilfeller.»",
+    "badgeRiskTesting": "Risikobasert testing",
+    "badgeTools": "Playwright · k6 · BrowserStack",
+    "badgeCICD": "CI/CD-integrasjon",
+    "cta": "Utforsk reisen min",
+    "basedIn": "Basert i",
+    "location": "Stavanger, Norge",
+    "photoAlt": "Muhammad Ali Anwar"
+  },
+  "journey": {
+    "sectionTag": "Veien",
+    "title": "Fra Pakistan til Norge",
+    "subtitle": "Fra Pakistan til Norge — en akademisk og profesjonell reise bygget på kontinuerlig vekst og transformasjon.",
+    "hoverHint": "Hold musepekeren over nodene for å utforske",
+    "milestones": {
+      "1": {
+        "label": "Islamia University",
+        "sub": "Bahawalpur, Pakistan",
+        "summary": "Bachelorgrad — La grunnlaget innen informatikk og programvareutvikling."
+      },
+      "2": {
+        "label": "Universitetet i Stavanger",
+        "sub": "Stavanger, Norge",
+        "summary": "Master i informatikk — Spesialisering innen datavitenskap og fordypning i programvareteknikk, programvarekvalitet, distribuerte systemer og forskningsdrevet ingeniørarbeid."
+      },
+      "3": {
+        "label": "Laerdal Medical",
+        "sub": "Utvikler",
+        "summary": "Unity-basert 3D-simulering integrert med fysiske medisinske dukker som reagerte på sanntidsdata. Opparbeidet dyp forståelse av sanntidssystemer og kvalitet fra et utviklerperspektiv."
+      },
+      "4": {
+        "label": "Equinor",
+        "sub": "QA-ingeniør",
+        "summary": "Gikk fra manuell testing til Playwright-automatisering. Innførte strukturerte regresjonsrammeverk som reduserte avhengigheten av ad-hoc-testing og økte forutsigbarheten i utgivelsene."
+      },
+      "5": {
+        "label": "Sekal",
+        "sub": "Automatisering & CI/CD",
+        "summary": "Håndterte kompleks C#/Redis/Server/Web-arkitektur. Implementerte datadrevet POM-rammeverk og integrerte tester som CI/CD-utrullingsporter, noe som reduserte utrullingsinstabilitet betraktelig."
+      },
+      "6": {
+        "label": "Lyse",
+        "sub": "QA-rammeverkdesign",
+        "summary": "Bygde QA fra null strukturert QA. Innførte DoD, DoR, 3-Amigos, teststrategi, Scrum-seremonier, pipelinevalidering, k6-ytelsestesting og WCAG-tilgjengelighetskontroll. Transformerte utviklingen til en strømlinjeformet, kvalitetsfokusert prosess med sterk vekt på automatisering og kontinuerlig forbedring."
+      }
+    }
+  },
+  "career": {
+    "sectionTag": "Transformasjon",
+    "title": "Karriereutvikling",
+    "subtitle": "En bevisst progresjon fra utvikler til kvalitetsarkitekt — hvert steg bygget mot strategisk testlederskap.",
+    "stages": {
+      "developer": {
+        "label": "Utvikler",
+        "desc": "Utvikling og simuleringssystemer. Å forstå systemer innenfra og ut ga et unikt helhetlig QA-perspektiv."
+      },
+      "qaEngineer": {
+        "label": "QA-ingeniør",
+        "desc": "Manuell testing og feilhåndtering. Første erfaring med kvalitetsstyring i stor skala og overgang til kvalitetsingeniørarbeid."
+      },
+      "automation": {
+        "label": "Automatisering",
+        "desc": "Playwright, datadrevne rammeverk. Arkitekterte datadrevne Page Object Model-rammeverk for komplekse C#/Redis/Web-stakker. Hevet automatiseringsmodenheten på tvers av ingeniørteam."
+      },
+      "cicd": {
+        "label": "CI/CD-integrasjon",
+        "desc": "Pipelineporter, utrullingsstyring. Integrerte automatiserte tester som utrullingsporter i CI/CD-pipelines. Kvalitet ble en ufravikelig betingelse — ikke en ettertanke — i hver utgivelsessyklus."
+      },
+      "qaStrategy": {
+        "label": "QA-strategi",
+        "desc": "Prosessdesign, DoD/DoR, teststrategi. Etablerte QA-rammeverk fra bunnen av. Innførte prosessmodenhet: Definition of Done, Definition of Ready, 3-Amigos-sesjoner, teststrategi, k6-ytelsestesting."
+      },
+      "testLeadership": {
+        "label": "Testlederskap",
+        "desc": "Veiledning, interessentjustering. Eierskap til kvalitetsvisjonen. Coaching av ingeniører, samkjøring av produkt og utvikling, Playwright-opplæring, utforming av sprintseremonier og WCAG-tilgjengelighetsetterlevelse."
+      }
+    }
+  },
+  "cases": {
+    "sectionTag": "Dokumenterte resultater",
+    "title": "Casestudier",
+    "subtitle": "Fire oppdrag som demonstrerer transformasjonsevne — fra automatiseringsdesign til kulturendring.",
+    "contextLabel": "Kontekst",
+    "actionLabel": "Tiltak",
+    "impactLabel": "Resultat",
+    "leadershipLabel": "Lederskap",
+    "equinor": {
+      "company": "Equinor",
+      "industry": "Energi · Storvirksomhet",
+      "headline": "Fra manuell regresjon til automatisert trygghet",
+      "context": "En manuell regresjonsprosess uten strukturert automatiseringsstrategi. Utgivelsessykluser var uforutsigbare, og testdekning var helt avhengig av individuell innsats og institusjonell hukommelse.",
+      "action": "Innførte Playwright-basert automatisering for regresjonsdekning. Designet gjenbrukbare testsuiter tilpasset utgivelsessjekkpunkter. Etablerte konseptet «kvalitetsgrunnlinje» som teamene kunne stole på mellom utgivelser.",
+      "impact": "Økt forutsigbarhet i utgivelser. Redusert tid brukt på repetitiv regresjon. Skapte et grunnlag for skalerbar automatisering som overlevde oppdraget.",
+      "leadership": "Talte for automatiseringsinvestering overfor interessenter. Trente teammedlemmer i testskriptprinsipper. Posisjonerte QA som en strategisk funksjon i stedet for en flaskehals i siste fase.",
+      "tags": ["Playwright", "Regresjonsautomatisering", "Enterprise QA"]
+    },
+    "sekal": {
+      "company": "Sekal",
+      "industry": "Olje & gass · Dyp teknologi",
+      "headline": "CI/CD-kvalitetsporter for kompleks eldre arkitektur",
+      "context": "En kompleks teknisk stabel — C#, Redis, webportal — med løst koblede tjenester og ingen automatiserte kvalitetssikringer. Utrullinger var hyppige, og instabilitet var vanlig.",
+      "action": "Implementerte et datadrevet Page Object Model (POM)-rammeverk. Kartla testdekning mot utrullingsrisikosoner. Integrerte automatiserte testsuiter som harde utrullingsporter i CI/CD-pipelines. Strukturerte tverrfaglig testeierskap.",
+      "impact": "Redusert utrullingsinstabilitet. Etablerte automatisert kvalitetsstyring som CI/CD-norm. Forbedret tverrfaglig samarbeid ved å klargjøre testansvar på tvers av 10+ systemgrensesnitt.",
+      "leadership": "Samarbeidet med arkitekter og DevOps for å designe pipelineintegrasjon. Synliggjorde kvalitetsrisikoer tidlig i planleggingssesjoner. Bygde tverrfunksjonell tillit gjennom transparent feiltriagering.",
+      "tags": ["C# · Redis", "Datadrevet POM", "CI/CD-porter", "10+ systemer"]
+    },
+    "lyse": {
+      "company": "Lyse",
+      "industry": "Forsyning · Forbrukerteknologi",
+      "headline": "Etablering av QA-kultur fra bunnen av",
+      "context": "Ingen strukturert QA-prosess eksisterte. Sprinter manglet tydelige akseptansekriterier, teststrategi var fraværende, og kvalitet ble behandlet som et implisitt utvikleransvar.",
+      "action": "Innførte Definition of Done (DoD), Definition of Ready (DoR) og 3-Amigos-sesjoner. Forfattet den første formelle teststrategien. Integrerte pipelinevalidering. Lanserte k6-ytelsestesting og WCAG-tilgjengelighetskontroller.",
+      "impact": "Transformerte sprintforutsigbarhet. Muliggjorde tidlig feildeteksjon før kode nådde staging. Etablerte tilgjengelighet og ytelse som målbare kvalitetsdimensjoner — ikke ettertanker.",
+      "leadership": "Drev QA-prosessdesign fra grunnen med Product Owner-justering. Fasiliterte Scrum-seremonier og planleggingssesjoner. Ble kvalitetsankeret for hele produktorganisasjonen.",
+      "tags": ["k6-ytelse", "WCAG-tilgjengelighet", "Teststrategi", "3-Amigos"]
+    },
+    "laerdal": {
+      "company": "Laerdal Medical",
+      "industry": "Medisinsk teknologi · Simulering",
+      "headline": "Kvalitetsingeniørarbeid i sikkerhetskritisk medisinsk simulering",
+      "context": "En Unity-basert 3D-simuleringsplattform integrert med fysiske medisinske dukker som reagerte på fysiologiske sanntidsdata. Innsatsen: opplæring av helsepersonell for livskritiske scenarier.",
+      "action": "Utviklet og testet simuleringslogikk for nøyaktig fysisk-digital synkronisering. Bygde forståelse av systemintegrasjon mellom maskinvaresensorer, sanntidsdatastrømmer og 3D-renderingspipelines.",
+      "impact": "Bidro til et produkt brukt i sykehusopplæring globalt. Bygde dyp tverrfaglig kunnskap — programvare, maskinvare, domenelogikk — som formet en unikt helhetlig tilnærming til kvalitet.",
+      "leadership": "Opererte i skjæringspunktet mellom ingeniørarbeid og domeneekspertise. Samarbeidet med medisinsk ekspertise og maskinvareingeniører. Denne erfaringen informerte direkte senere QA-strategiarbeid gjennom forståelse av kvalitet fra et utviklerperspektiv.",
+      "tags": ["Unity", "Sanntidsdata", "Medisinsk simulering", "Maskinvareintegrasjon"]
+    }
+  },
+  "impact": {
+    "sectionTag": "Målbare resultater",
+    "title": "Resultater og effekt",
+    "subtitle": "Målbare resultater levert på tvers av oppdrag — kvalitet som en strategisk kapabilitet.",
+    "metrics": {
+      "deploymentStability": "Forbedret utrullingsstabilitet",
+      "manualRegression": "Redusert manuell regresjon",
+      "qaFrameworks": "QA-rammeverk bygget fra null",
+      "systemsIntegrated": "Systemer integrert og testet",
+      "cicdGovernance": "CI/CD-styring etablert",
+      "teamsMentored": "Team veiledet"
+    }
+  },
+  "philosophy": {
+    "sectionTag": "Prinsipper",
+    "title": "Kvalitetsfilosofi",
+    "intro": "Dette er ikke bare metoder — det er veiledende prinsipper som former hvordan jeg designer kvalitetssystemer, påvirker team og tar strategiske beslutninger.",
+    "quote": "«Kvalitet er ikke en fase — det er en arkitektonisk forpliktelse fra dag én.»",
+    "principles": {
+      "riskBased": {
+        "title": "Risikobasert testing",
+        "description": "Ikke all kode bærer lik risiko. Teststrategien må stå i forhold til forretningspåvirkning, utrullingsfrekvens og konsekvenser ved feil. Innsatsen rettes dit det betyr mest.",
+        "highlight": "Prioriter etter konsekvens"
+      },
+      "shiftLeft": {
+        "title": "Shift-Left-tilnærming",
+        "description": "Feil er billigst ved kilden. Kvalitetsporter, DoD/DoR-definisjoner og 3-Amigos-sesjoner bringer kvalitetstenkning inn i krav og design — før en eneste kodelinje er skrevet.",
+        "highlight": "Kvalitet starter ved oppdagelse"
+      },
+      "automationSafety": {
+        "title": "Automatisering som sikkerhetsnett",
+        "description": "Automatisering er ikke en erstatning for tenkning — det er en permanent vokter. Godt designede automatiserte testsuiter beskytter kjent atferd og frigjør eksplorativ innsats for det ukjente.",
+        "highlight": "Beskytt det som er kjent"
+      },
+      "cicdGovernance": {
+        "title": "CI/CD som kvalitetsstyring",
+        "description": "Utrullingspipelines er kvalitetshåndhevingsmekanismer. Tester som porter transformerer CI/CD fra leveranseinfrastruktur til et kontinuerlig kvalitetsrevisjonssystem.",
+        "highlight": "Porter over porter"
+      },
+      "collaboration": {
+        "title": "Samarbeid fremfor siloer",
+        "description": "Kvalitet er et delt organisatorisk ansvar. Tverrfunksjonell samkjøring mellom produkt, utvikling og QA fjerner overraskelser sent i prosessen og bygger delt eierskap til resultater.",
+        "highlight": "Delt ansvarlighet"
+      }
+    }
+  },
+  "devops": {
+    "sectionTag": "Teknisk fortrinn",
+    "title": "DevOps og KI i QA",
+    "subtitle": "Utvider kvalitetsingeniørarbeid utover testskriving — inn i pipelinearkitektur, containerisering og KI-støttede arbeidsflyter.",
+    "devopsTag": "DevOps-ingeniørarbeid",
+    "aiTag": "KI i QA",
+    "toolStackLabel": "Verktøystabel",
+    "andMore": "og mer...",
+    "skills": {
+      "docker": {
+        "title": "Docker-containerisering",
+        "description": "Containeriserte testmiljøer som muliggjør reproduserbar, miljøuavhengig testkjøring. Tester kjører konsistent på tvers av lokal, staging og CI-kjørere."
+      },
+      "yaml": {
+        "title": "YAML-pipelinefeilsøking",
+        "description": "Dyktig i å skrive og feilsøke Azure DevOps- og GitHub Actions-pipelines. Evne til å diagnostisere pipelinefeil og optimalisere rekkefølgen på trinn."
+      },
+      "cicdGates": {
+        "title": "CI/CD-kvalitetsporter",
+        "description": "Designet test-som-port-mønstre som håndhever kvalitetsterskler før utrulling fortsetter. Kvalitet blir en ufravikelig betingelse i leveranseprosessen."
+      },
+      "aiRequirements": {
+        "title": "KI-assistert kravanalyse",
+        "description": "Bruker KI-verktøy for å avdekke tvetydigheter, identifisere manglende grensetilfeller og akselerere kravvalidering — reduserer feil som oppstår i mangelfulle brukerhistorier."
+      },
+      "aiTestGen": {
+        "title": "KI-støttet testgenerering",
+        "description": "Utnytter generativ KI for å akselerere testcaseskriving for normalflyt og grenseverdier. KI som kraftmultiplikator for testdekning — ikke en erstatning for vurdering."
+      },
+      "logSummarization": {
+        "title": "Loggoppsummering og feiltriagering",
+        "description": "KI-assistert analyse av byggelogger og feilspor. Raskere rotårsaksidentifisering reduserer tid-til-løsning og opprettholder høy utrullingshastighet."
+      }
+    }
+  },
+  "leadership": {
+    "sectionTag": "Klar til å lede",
+    "title": "Lederskap og",
+    "titleLine2": "rådgivnings-",
+    "titleLine3": "beredskap",
+    "intro1": "En testleder er ikke en senior tester — det er en kvalitetsstrateg, teamcoach og organisatorisk påvirker.",
+    "intro2": "Disse evnene er demonstrert gjennom reelle oppdrag — ikke teoretiske rammeverk.",
+    "indicators": {
+      "crossFunctional": "Tverrfunksjonell teamjustering",
+      "strategicQuality": "Strategisk kvalitetseierskap",
+      "processDesign": "Prosessdesign fra bunnen av",
+      "executiveComm": "Kommunikasjon på ledernivå",
+      "teamCoaching": "Coaching av ingeniørteam"
+    },
+    "areas": {
+      "stakeholder": {
+        "title": "Interessentkommunikasjon",
+        "points": [
+          "Oversetter tekniske kvalitetsrisikoer til forretningspåvirkningsspråk.",
+          "Presenterer dekningsrapporter og sprintkvalitetsmålinger for produkteiere.",
+          "Bygger bro mellom tekniske og forretningsmessige beslutningssamtaler."
+        ]
+      },
+      "challenge": {
+        "title": "Konstruktiv utfordring",
+        "points": [
+          "Utfordrer urealistiske tidsfrister med data.",
+          "Synliggjør kvalitetsrisikoer tidlig, før forpliktelser låses.",
+          "Fremmer bærekraftig leveranse fremfor kortsiktig hastighet."
+        ]
+      },
+      "refinement": {
+        "title": "Foredling av brukerhistorier",
+        "points": [
+          "Forbedrer klarhet i akseptansekriterier sammen med produkteiere.",
+          "Fasiliterer 3-Amigos-samkjøringssesjoner.",
+          "Innfører Definition of Ready-rammeverk."
+        ]
+      },
+      "training": {
+        "title": "Intern opplæring og kompetanseheving",
+        "points": [
+          "Gjennomførte interne Playwright-opplæringsøkter.",
+          "Veiledet ingeniører i testdesignprinsipper, lokatorstrategier og vedlikeholdbar testarkitektur.",
+          "Posisjonerte QA som en delt teamkapabilitet."
+        ]
+      }
+    }
+  },
+  "contact": {
+    "sectionTag": "Ta kontakt",
+    "title": "La oss bygge pålitelige systemer",
+    "description1": "Ser du etter en konsulent som transformerer kvalitet fra et sjekkpunkt til et konkurransefortrinn og bringer kvalitetsstrategi, ikke bare testutførelse — la oss snakke.",
+    "description2": "Jeg designer kvalitetssystemer som skalerer, veileder team som vokser, og etablerer prosesser som overlever oppdraget.",
+    "emailButton": "SEND E-POST",
+    "linkedinButton": "KOBLE TIL PÅ LINKEDIN",
+    "footerName": "Muhammad Ali Anwar · Senior QA-ingeniør",
+    "footerLocation": "Stavanger, Norge"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Oops! Siden ble ikke funnet",
+    "returnHome": "Tilbake til forsiden"
+  }
+}
