@@ -174,7 +174,7 @@ export default function HeroSection() {
                 margin: "2rem 0",
               }}
              className="border-l-4 border-accent pl-4 text-xl italic text-primary/80">
-              "I design quality systems ——<br /> not just test cases."
+              "Design quality systems ——<br /> not just test cases."
             </blockquote>
             
 
