@@ -165,7 +165,7 @@ export default function CaseStudies() {
       action: t("cases.equinor.action"),
       impact: t("cases.equinor.impact"),
       leadership: t("cases.equinor.leadership"),
-      tags: t("cases.equinor.tags").split(" · "),
+      tags: t("cases.equinor.tags", { returnObjects: true })
     },
     {
       id: "sekal",
@@ -176,7 +176,7 @@ export default function CaseStudies() {
       action: t("cases.sekal.action"),
       impact: t("cases.sekal.impact"),
       leadership: t("cases.sekal.leadership"),
-      tags: t("cases.sekal.tags").split(" · "),
+      tags: t("cases.sekal.tags", { returnObjects: true })
     },
     {
       id: "lyse",
@@ -187,7 +187,7 @@ export default function CaseStudies() {
       action: t("cases.lyse.action"),
       impact: t("cases.lyse.impact"),
       leadership: t("cases.lyse.leadership"),
-      tags: t("cases.lyse.tags").split(" · "),
+      tags: t("cases.lyse.tags", { returnObjects: true })
     },
     {
       id: "laerdal",
@@ -198,7 +198,7 @@ export default function CaseStudies() {
       action: t("cases.laerdal.action"),
       impact: t("cases.laerdal.impact"),
       leadership: t("cases.laerdal.leadership"),
-      tags: t("cases.laerdal.tags").split(" · "),
+      tags: t("cases.laerdal.tags", { returnObjects: true })
     },
   ];
 

@@ -110,7 +110,7 @@
       "action": "Introduced Playwright-based automation for regression coverage. Designed reusable test suites aligned with release checkpoints. Established the concept of a 'quality baseline' that teams could rely on across releases.",
       "impact": "Increased release predictability. Reduced time spent on repetitive regression. Created a foundation for scalable automation that outlasted the engagement.",
       "leadership": "Advocated for automation investment to stakeholders. Trained team members on test scripting principles. Positioned QA as a strategic function rather than a final-stage bottleneck.",
-      "tags": ["Playwright", "Regression Automation", "Enterprise QA"]
+      "tags": ["Playwright", "|", "Regression Automation", "|", "Enterprise QA"]
     },
     "sekal": {
       "company": "Sekal",
@@ -120,7 +120,7 @@
       "action": "Implemented a data-driven Page Object Model (POM) framework. Mapped test coverage to deployment risk zones. Integrated automated test suites as hard deployment gates within CI/CD pipelines. Structured cross-team test ownership.",
       "impact": "Reduced deployment instability. Established automated quality governance as a CI/CD norm. Improved cross-team collaboration by clarifying test responsibilities across 10+ system interfaces.",
       "leadership": "Collaborated with architects and DevOps to design pipeline integration. Surfaced quality risks early in planning sessions. Built cross-functional trust through transparent defect triage.",
-      "tags": ["C# · Redis", "Data-Driven POM", "CI/CD Gates", "10+ Systems"]
+      "tags": ["C# · Redis", "|", "Data-Driven POM", "|", "CI/CD Gates", "|", "10+ Systems"]
     },
     "lyse": {
       "company": "Lyse",
@@ -130,7 +130,7 @@
       "action": "Introduced Definition of Done (DoD), Definition of Ready (DoR), and 3-Amigos sessions. Authored the first formal Test Strategy. Integrated pipeline validation. Launched k6 performance testing and WCAG accessibility compliance checks.",
       "impact": "Transformed sprint predictability. Enabled early defect detection before code reached staging. Established accessibility and performance as measurable quality dimensions — not afterthoughts.",
       "leadership": "Drove QA process design from the ground up with Product Owner alignment. Facilitated Scrum ceremonies and Poker Planning sessions. Became the quality anchor for the entire product organization.",
-      "tags": ["k6 Performance", "WCAG Accessibility", "Test Strategy", "3-Amigos"]
+      "tags": ["k6 Performance", "|", "WCAG Accessibility", "|", "Test Strategy", "|", "3-Amigos"]
     },
     "laerdal": {
       "company": "Laerdal Medical",
@@ -140,7 +140,7 @@
       "action": "Developed and tested simulation logic ensuring accurate physical-digital synchronization. Built understanding of system integration between hardware sensors, real-time data streams, and 3D rendering pipelines.",
       "impact": "Contributed to a product used in hospital training programs globally. Built deep cross-domain knowledge — software, hardware, domain logic — that shaped a uniquely holistic approach to quality.",
       "leadership": "Operated at the intersection of engineering and domain expertise. Collaborated with medical experts and hardware engineers. This experience directly informed later QA strategy work by understanding quality from a developer's perspective.",
-      "tags": ["Unity", "Real-Time Data", "Medical Simulation", "Hardware Integration"]
+      "tags": ["Unity", "|", "Real-Time Data", "|", "Medical Simulation", "|", "Hardware Integration"]
     }
   },
   "impact": {
