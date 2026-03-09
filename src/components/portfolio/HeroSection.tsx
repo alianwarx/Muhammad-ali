@@ -186,6 +186,25 @@ export default function HeroSection() {
                 {t("hero.cta")} <ArrowDown size={18} />
               </a>
             </Button>
+
+            <Button
+  size="lg"
+  className="bg-accent text-accent-foreground hover:bg-accent/90 gap-2"
+  onClick={() => {
+    document.querySelector("#journey")?.scrollIntoView({ behavior: "smooth" });
+  }}
+>
+  {t("hero.cta")} <ArrowDown size={18} />
+</Button>
+            <Button
+  size="lg"
+  className="bg-accent text-accent-foreground hover:bg-accent/90 gap-2"
+  asChild
+>
+  <a href="#journey" onClick={(e) => handleNavClick(e, "#journey")}>
+    {t("hero.cta")} <ArrowDown size={18} />
+  </a>
+</Button>
           </div>
 
 
