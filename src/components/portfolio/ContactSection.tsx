@@ -37,7 +37,7 @@ export default function ContactSection() {
             className="border-primary-foreground/30 text-primary-foreground text-[hsl(220deg_100%_31.52%)] hover:bg-primary-foreground/10 gap-2"
             asChild
           >
-            <a href="https://linkedin.com/in/muhammad-ali-anwar" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/muhammad-ali-anwar-1407/" target="_blank" rel="noopener noreferrer">
               <Linkedin size={18} /> {t("contact.linkedinButton")}
             </a>
           </Button>
